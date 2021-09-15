@@ -8,7 +8,7 @@ const fetchStoreApi =
   async (endpoint: string, options?: RequestInit): Promise<T> => {
     const config = getConfig()
     let res: Response
-
+console.log(config, endpoint)
     try {
       res = await fetch(config.storeApiUrl + endpoint, {
         ...options,

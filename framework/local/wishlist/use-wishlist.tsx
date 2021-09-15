@@ -17,7 +17,6 @@ export type Wishlist = {
 export interface UseWishlistOptions {
   includeProducts?: boolean
 }
-
 export interface UseWishlistInput extends UseWishlistOptions {
   customerId?: number
 }

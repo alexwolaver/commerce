@@ -47,7 +47,7 @@ const STORE_CHANNEL_ID = process.env.BIGCOMMERCE_CHANNEL_ID
 const STORE_URL = process.env.BIGCOMMERCE_STORE_URL
 const CLIENT_SECRET = process.env.BIGCOMMERCE_STORE_API_CLIENT_SECRET
 const STOREFRONT_HASH = process.env.BIGCOMMERCE_STORE_API_STORE_HASH
-
+console.log(process.env)
 if (!API_URL) {
   throw new Error(
     `The environment variable BIGCOMMERCE_STOREFRONT_API_URL is missing and it's required to access your store`
