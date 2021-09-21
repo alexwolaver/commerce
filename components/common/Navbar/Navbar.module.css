@@ -1,11 +1,13 @@
 .root {
-  @apply sticky top-0 bg-primary z-40 transition-all duration-150;
+  @apply relative top-0 bg-primary z-40 transition-all duration-150;
   min-height: 74px;
 }
 
 .nav {
-  @apply relative flex flex-row justify-between py-4 md:py-4;
+  @apply relative flex h-14;
+  background-color: #FAF5ED;
 }
+
 
 .navMenu {
   @apply hidden ml-6 space-x-4 lg:block;
@@ -26,10 +28,7 @@
 }
 
 .logo {
-  @apply cursor-pointer rounded-full border transform duration-100 ease-in-out;
+ padding-bottom: 5px;
+  
 
-  &:hover {
-    @apply shadow-md;
-    transform: scale(1.05);
-  }
 }

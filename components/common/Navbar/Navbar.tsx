@@ -4,6 +4,7 @@ import s from './Navbar.module.css'
 import NavbarRoot from './NavbarRoot'
 import { Logo, Container } from '@components/ui'
 import { Searchbar, UserNav } from '@components/common'
+import KinLogo from '@components/ui/Logo/KinLogo'
 
 interface Link {
   href: string
@@ -20,10 +21,10 @@ const Navbar: FC<NavbarProps> = ({ links }) => (
         <div className="flex items-center flex-1">
           <Link href="/">
             <a className={s.logo} aria-label="Logo">
-              <Logo />
+              <KinLogo/>
             </a>
           </Link>
-          <nav className={s.navMenu}>
+          {/* <nav className={s.navMenu}>
             <Link href="/search">
               <a className={s.link}>All</a>
             </Link>
@@ -32,14 +33,14 @@ const Navbar: FC<NavbarProps> = ({ links }) => (
                 <a className={s.link}>{l.label}</a>
               </Link>
             ))}
-          </nav>
+          </nav> */}
         </div>
         {process.env.COMMERCE_SEARCH_ENABLED && (
-          <div className="justify-center flex-1 hidden lg:flex">
+          <div className="justify-center flex-1 hidden lg:flex justify-end">
             <Searchbar />
           </div>
         )}
-        <div className="flex items-center justify-end flex-1 space-x-8">
+        <div className="flex items-center justify-end mr-6 ml-0 flex-1">
           <UserNav />
         </div>
       </div>

@@ -1,9 +1,9 @@
 .root {
-  @apply relative;
+  @apply relative max-w-xs;
 }
 
 .list {
-  @apply flex flex-row items-center justify-items-end h-full;
+  @apply flex flex-row justify-items-end h-full;
 }
 
 .item {

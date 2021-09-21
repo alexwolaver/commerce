@@ -1,25 +1,37 @@
 .root {
-  @apply relative text-sm bg-accent-0 text-base w-full transition-colors duration-150 border border-accent-2;
+  @apply absolute text-sm bg-accent-0 text-base h-8 transition-colors duration-150;
+  background-color: #FAF5ED;
+  border-bottom: solid !important;
+  border-width: .2px !important;
+  border-color: #FAF5ED;
+  right: 110px;
+  top: 12px;
+  width: 15rem;
+
+
 }
 
 .input {
-  @apply bg-transparent px-3 py-2 appearance-none w-full transition duration-150 ease-in-out pr-10;
+  @apply bg-transparent px-3 py-2 appearance-none w-48 transition duration-150 ease-in-out pr-10;
 }
 
 .input::placeholder {
   @apply text-accent-3;
+  color: #3B4107 !important;
+  opacity: 40%;
 }
 
 .input:focus {
-  @apply outline-none shadow-outline-normal;
+  @apply outline-none;
 }
 
 .iconContainer {
-  @apply absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none;
+  @apply absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none ;
+  padding-right: 0px !important;
 }
 
 .icon {
-  @apply h-5 w-5;
+  @apply h-5 w-5 ;
 }
 
 @screen sm {

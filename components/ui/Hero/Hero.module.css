@@ -1,5 +1,6 @@
 .root {
   @apply flex flex-col py-16 mx-auto;
+  background-color: #F7E6CD;
 }
 
 .title {
