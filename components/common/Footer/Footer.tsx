@@ -8,6 +8,7 @@ import { Github, Vercel } from '@components/icons'
 import { Logo, Container } from '@components/ui'
 import { I18nWidget } from '@components/common'
 import s from './Footer.module.css'
+import KinLogo from '@components/ui/Logo/KinLogo'
 
 interface Props {
   className?: string
@@ -33,10 +34,9 @@ const Footer: FC<Props> = ({ className, pages }) => {
           <div className="col-span-1 lg:col-span-2">
             <Link href="/">
               <a className="flex flex-initial items-center font-bold md:mr-24">
-                <span className="rounded-full border border-accent-6 mr-2">
+                <span className="rounded-full">
                   <Logo />
                 </span>
-                <span>ACME</span>
               </a>
             </Link>
           </div>
@@ -79,10 +79,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
               target="_blank"
               className="text-primary"
             >
-              <Vercel
-                className="inline-block h-6 ml-3 text-primary"
-                alt="Vercel.com Logo"
-              />
+           <KinLogo />
             </a>
           </div>
         </div>
