@@ -16,6 +16,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      backgroundImage: {
+        'ben-cello-banner': "url('/public/assets/Webp.net-resizeimage.png')"
+      },
       maxWidth: {
         '8xl': '1920px',
       },

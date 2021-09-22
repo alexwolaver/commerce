@@ -1,6 +1,7 @@
 import '@assets/main.css'
 import '@assets/chrome-bug.css'
 import 'keen-slider/keen-slider.min.css'
+import '@components/common/LandingBanner/LandingBanner.module.css'
 
 import { FC, useEffect } from 'react'
 import type { AppProps } from 'next/app'
