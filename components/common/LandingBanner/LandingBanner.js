@@ -14,15 +14,16 @@ import * as BannerImage from '../LandingBanner/LandingBanner.png'
 
 
 const LandingBanner = () => {
-    return (
-        <Container className="banner">
-            <div>
-            <Image className="bannerImage" src={BannerImage}  />
-            <BenCelloLogo className="benLogo" />
-            </div>
-        </Container>
-    )
+  return (
+
+    <div className="banner">
+      <Image className="bannerImage"
+        src={BannerImage} />
+      <BenCelloLogo className="benLogo" />
+    </div>
+
+  )
 }
 
 
-  export default LandingBanner;
+export default LandingBanner;

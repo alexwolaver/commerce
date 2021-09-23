@@ -14,6 +14,7 @@ import { Sidebar, Button, Modal, LoadingDots } from '@components/ui'
 import PaymentMethodView from '@components/checkout/PaymentMethodView'
 import CheckoutSidebarView from '@components/checkout/CheckoutSidebarView'
 import LandingBanner from '../LandingBanner'
+import Episodes from '../Episodes'
 
 import LoginView from '@components/auth/LoginView'
 import s from './Layout.module.css'
@@ -108,6 +109,7 @@ const Layout: FC<Props> = ({
         <Navbar links={navBarlinks} />
         {/* <main className="fit">{children}</main> */}
         <LandingBanner />
+        <Episodes  />
         <Footer pages={pageProps.pages} />
         <ModalUI />
         <SidebarUI />
